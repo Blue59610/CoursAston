@@ -155,3 +155,5 @@ git branch [nom branche]
 si vide, voit branches existantes
 git merge [branche] => fusionner branche
 
+
+
