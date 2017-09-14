@@ -1,0 +1,48 @@
+Javascript est un language de programmation orienté objet à prototype
+
+Javascript est un language qui nécessite un interpréteur qui lit, analyse et compile le script pour l'éxecuter
+Il existe plusieurs interpréteurs (SpiderMonkey et Rhino pour Mozilla, V8 pour Google)
+
+Nommage commence par une lettre ou $ ou _
+
+Types :
+string, number, boolean, null, undefined
+
+Les types boolean string boolean peuvent être encapsulés dans des objets primitifs
+
+Expression ternaire :
+
+[Condition] ? [Alors] : [Sinon];
+
+exemple :
+  var couleur = "rouge";
+  var num = (couleur == "vert") ? '#377D22' : '#AB0800';
+
+
+JAVASCRIPT :
+
+Récupérer un élément grâce à son id -> document.getElementById('id')
+Insérer du texte dans un élement -> innerHTML
+
+Valeur par défaut d'un argument si non renseigné -> var arg = arg || "valeur si argument non renseigné"
+
+Lancer une fonction anonyme ->
+  (function maFonction(arg)
+   {
+      //code
+   }
+  )();
+
+Enregistrer une fonction dans une variable ->
+  var funky = function ()
+              {
+                // code
+              }
+  Pour la lancer : funky();
+
+
+Fonction de rappel -> elle est éxecutée lorsque l'écouteur détecte l'action correspondante (ici un clic) ->
+element.addEventListener('click', function(event)
+{
+    alert('My CallBack');
+});
