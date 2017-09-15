@@ -46,3 +46,6 @@ element.addEventListener('click', function(event)
 {
     alert('My CallBack');
 });
+
+Web Sockets
+https://developer.mozilla.org/fr/docs/WebSockets
