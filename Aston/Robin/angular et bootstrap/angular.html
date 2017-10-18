@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Insertion pages CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <title>Cours angular et bootstrap</title>
+  </head>
+  <body ng-app="myApp">
+    <!-- L'amusement pendant le cours -->
+    <div class="container" ng-controller="myCtrl">
+      <div class="col-sm-4">
+        <ul ng-repeat="item in tab">
+          <li>{{item.firstNumber}} {{item.operator}} {{item.secondNumber}} = {{item.result}}</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <input type="text" name="incrementer" ng-model="choice" ng-change="verify()">
+        <p ng-class="(isOk == true) ? 'hidden' : 'visible'">Veuillez saisir des nombres uniquement !</p>
+        <p>{{number}}</p>
+        <input id="remove" type="checkbox" name="check" value="retirer ?" ng-click="checkChange()">
+        <button ng-class="(negative == true ) ? 'btn btn-danger' : 'btn btn-success'" type="button" name="button" ng-click="action()">{{actionLabel}} {{choice}}</button>
+      </div>
+    </div>
+  </body>
+</html>

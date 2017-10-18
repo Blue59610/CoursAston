@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Insertion pages CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <title>Forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aston : <small>Bootstrap</small></h1>
+
+      <div class="row">
+        <form action="" method="post">
+
+            <div id="formFirstName" class="form-groups has-error">
+              <label for="firstName">Firstname</label>
+              <input id="firstName" type="text" name="" value="" placeholder="John" class="form-control"></input>
+              <span class="help-block" style="color:red">Firstname is required</span>
+            </div>
+
+            <div class="checkbox">
+              <label for="cdg">
+                <input type="checkbox" id="cdg" name="cdg">CDG</input>
+              </label>
+            </div>
+
+            <div class="form-group">
+              <select id="countries" name="countries" class="form-control">
+                <option value="France">France</option>
+                <option value="Italie">Italie</option>
+                <option value="Allemagne">Allemagne</option>
+              </select>
+            </div>
+
+            <button id="validate" class="btn btn-primary" name="button">Validate</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
