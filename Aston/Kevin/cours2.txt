@@ -1,0 +1,41 @@
+\\Vincent Letourneau : vincent@nanoninja.com
+
+BEM -> Block Element Modifier --> CSS
+
+.name -> classe
+#name -> id
+
+.block-element-modifier
+
+npm init
+npm install --save bootstrap
+npm install --save jquery
+
+npm install -g gulp
+npm install --save gulp-sass gulp-concat gulp-uglify
+npm install --save gulp-rename
+npm install --save lite-server concurrently
+
+npm install -g @angular/cli
+ng new [nom du projet]
+cd [nom du projet]
+ng server
+
+<----------- app.module.ts ------------->
+@NgModule -> décorateur
+Providers -> Service
+bootstrap : [AppComponent] -> Démarrage
+imports -> modules supplémentaires
+main.ts -> app.module.ts -->app.component.ts
+
+data binding
+1. string interpolation {{}}
+{{ {name : 'toto'} | json}}
+2. Property binding []
+<p [innerHTML]="'bonjour'"></p>
+3. event binding ()
+<button (click)="title='Mon Nouveau titre'">Click me</button>
+4. two way data binding [()]
+
+
+-> #FFC671, #FFE883, #BBBBBB 
