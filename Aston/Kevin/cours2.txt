@@ -26,7 +26,7 @@ ng server
 Providers -> Service
 bootstrap : [AppComponent] -> Démarrage
 imports -> modules supplémentaires
-main.ts -> app.module.ts -->app.component.ts
+main.ts -> app.module.ts -> app.component.ts
 
 data binding
 1. string interpolation {{}}
@@ -36,6 +36,13 @@ data binding
 3. event binding ()
 <button (click)="title='Mon Nouveau titre'">Click me</button>
 4. two way data binding [()]
+
+Créer un composant en ligne de commande
+ng generate component --spec false [nom du composent]
+ng g c --spec false echo/message
+
+npm install --save body-parser
+ng new [projet]
 
 
 -> #FFC671, #FFE883, #BBBBBB 
