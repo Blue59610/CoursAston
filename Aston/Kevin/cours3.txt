@@ -1,0 +1,6 @@
+// Rolan Laurès
+
+Ionic --> Créer des applications hybrides pour mobile
+		"méta-langage" -> développer en ionic mais génére du code pour autres plateformes
+		basé sur apache cordova
+
